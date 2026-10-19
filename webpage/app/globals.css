@@ -304,14 +304,14 @@ main {
 }
 .author-note span { display: inline-flex; align-items: center; }
 .affiliation-logos {
-  max-width: 850px;
+  max-width: 720px;
   margin: 20px auto 0;
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 18px;
-  align-items: start;
+  align-items: center;
 }
-.affiliation-logo { min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 5px; }
+.affiliation-logo { min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 9px; }
 .affiliation-image { width: 88px; height: 76px; display: grid; place-items: center; }
 .affiliation-image img {
   width: auto;
@@ -321,17 +321,9 @@ main {
   object-fit: contain;
   mix-blend-mode: multiply;
 }
-.affiliation-logo-5 .affiliation-image img { max-width: 78px; max-height: 70px; }
-.affiliation-logo-6 .affiliation-image img { max-width: 78px; max-height: 58px; }
-.affiliation-caption {
-  min-height: 28px;
-  color: var(--muted);
-  font-size: 10px;
-  font-weight: 600;
-  line-height: 1.35;
-  text-align: center;
-}
-.affiliation-caption sup { margin-right: 3px; color: var(--navy); font: 700 8px/1 var(--mono); }
+.affiliation-logo-4 .affiliation-image img { max-width: 78px; max-height: 70px; }
+.affiliation-logo-5 .affiliation-image img { max-width: 78px; max-height: 58px; }
+.affiliation-index { color: var(--navy); font: 750 9px/1 var(--mono); }
 .paper-tags { margin-top: 23px; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
 .paper-tags span {
   padding: 5px 10px;

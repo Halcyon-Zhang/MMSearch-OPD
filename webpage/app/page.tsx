@@ -19,7 +19,7 @@ import ablationMixFigure from "./images/paper/ablation-tool-mix.png";
 import rewardFigure from "./images/paper/rl-answer-reward.png";
 import lengthFigure from "./images/paper/rl-response-length.png";
 
-const repository = "https://github.com/JiepengZhou/MMSearch-OPD";
+const repository = "https://github.com/Halcyon-Zhang/MMSearch-OPD";
 
 type Author = {
   name: string;
@@ -33,24 +33,23 @@ const authors: Author[] = [
   { name: "Huanyao Zhang", affiliation: "1", equal: true, leader: true },
   { name: "Jiepeng Zhou", affiliation: "2", equal: true },
   { name: "Jiaye Lin", affiliation: "3", equal: true },
-  { name: "Ontai Tang", affiliation: "4" },
+  { name: "Ontai Tang", affiliation: "2" },
   { name: "Jingtian Hao", affiliation: "1" },
   { name: "Mugeng Liu", affiliation: "1" },
-  { name: "Ru Peng", affiliation: "5" },
-  { name: "Lang Mei", affiliation: "6" },
-  { name: "Xiaohan Yu", affiliation: "6" },
-  { name: "Liyan Liu", affiliation: "6" },
-  { name: "Chong Chen", affiliation: "6", corresponding: true },
+  { name: "Ru Peng", affiliation: "4" },
+  { name: "Lang Mei", affiliation: "5" },
+  { name: "Xiaohan Yu", affiliation: "5" },
+  { name: "Liyan Liu", affiliation: "5" },
+  { name: "Chong Chen", affiliation: "5", corresponding: true },
   { name: "Wentao Zhang", affiliation: "1", corresponding: true },
 ];
 
 const affiliations = [
-  { id: "1", name: "Peking University", label: "Peking University", logo: institute1Logo },
-  { id: "2", name: "HKUST(GZ)", label: "HKUST(GZ)", logo: institute2Logo },
-  { id: "3", name: "Tsinghua University", label: "Tsinghua University", logo: tsinghuaLogo },
-  { id: "4", name: "HKUST", label: "HKUST", logo: institute2Logo },
-  { id: "5", name: "Zhejiang University", label: "Zhejiang University", logo: zhejiangLogo },
-  { id: "6", name: "Huawei Cloud BU", label: "Huawei Cloud BU", logo: institute6Logo },
+  { id: "1", authorIds: "1", name: "Peking University", logo: institute1Logo },
+  { id: "2", authorIds: "2", name: "HKUST and HKUST(GZ)", logo: institute2Logo },
+  { id: "3", authorIds: "3", name: "Tsinghua University", logo: tsinghuaLogo },
+  { id: "4", authorIds: "4", name: "Zhejiang University", logo: zhejiangLogo },
+  { id: "5", authorIds: "5", name: "Huawei Cloud BU", logo: institute6Logo },
 ];
 
 const sections = [
@@ -429,7 +428,7 @@ export default function Home() {
               <span className="affiliation-image">
                 <Image src={affiliation.logo} alt={`${affiliation.name} logo`} />
               </span>
-              <span className="affiliation-caption"><sup>{affiliation.id}</sup>{affiliation.label}</span>
+              <sup className="affiliation-index">{affiliation.authorIds}</sup>
             </div>
           ))}
         </div>
