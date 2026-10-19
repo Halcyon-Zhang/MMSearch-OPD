@@ -1,0 +1,4 @@
+:HL["/MMSearch-OPD/_next/static/chunks/18fxc5g6rp19w.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"aByJUFP_tshiBZPus70oS","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
